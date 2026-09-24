@@ -43,6 +43,22 @@ nav a:hover { color: var(--accent); }
 
 section { margin-bottom: 3rem; }
 
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 1.35rem;
+}
+
+.avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.header-text { min-width: 0; }
+
 h2 {
   margin: 2.6rem 0 1.2rem;
   font-size: .82rem;
@@ -115,4 +131,6 @@ footer {
   h1 { font-size: 1.7rem; }
   nav a { display: inline-block; margin-bottom: .4rem; }
   td.yr { font-size: .82rem; }
+  .header-top { flex-direction: column; align-items: flex-start; gap: .85rem; }
+  .avatar { width: 76px; height: 76px; }
 }
